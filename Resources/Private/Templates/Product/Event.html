@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+    <div class="container">
+        <div class="row text-center">
+            <f:if condition="{productData.image}">
+                <div class="col-md-12">
+                    <f:image src="{productData.image}" width="300" height="300" />
+                </div>
+            </f:if>
+            <div class="col-md-12">
+                <p>
+                    <strong>{productData.title}</strong>
+                </p>
+                <p>
+                    Description: <br />
+                    {productData.description}
+                </p>
+                <p>
+                    Price: <br />
+                    <f:format.currency decimalSeparator="," thousandsSeparator="." decimals="2"
+                                       currencySign="€" prependCurrency="false" separateCurrency="true"
+                    >
+                        {productData.price}
+                    </f:format.currency>
+                </p>
+            </div>
+        </div>
+    </div>
+</f:section>
+</html>

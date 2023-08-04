@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:custom_event/Resources/Private/Language/locallang_db" date="2023-05-19T13:34:38Z" product-name="custom_event">
+		<header/>
+		<body>
+			<trans-unit id="plugin_enrichproductdata.name" resname="plugin_enrichproductdata.name">
+				<source>Enrich product data event</source>
+			</trans-unit>
+			<trans-unit id="plugin_enrichproductdata.description" resname="plugin_enrichproductdata.description">
+				<source>Adds a custom event which enrich default product data</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
